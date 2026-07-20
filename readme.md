@@ -1,5 +1,5 @@
+<img width="198" height="199" alt="rune" src="https://github.com/user-attachments/assets/2b997d24-2135-4939-a228-9c1fc75d1e4a" />
 
-<img width="442" height="443" alt="rune" src="https://github.com/user-attachments/assets/3c2d1e50-127f-4f7d-bed5-c69f85cc36fb" />
 <img width="1108" height="621" alt="shell" src="https://github.com/user-attachments/assets/f25a5834-6329-470d-a1c6-d3ed19d608bc" />
 
 
