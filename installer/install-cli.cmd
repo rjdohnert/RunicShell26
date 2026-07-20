@@ -22,7 +22,7 @@ if errorlevel 1 exit /b 1
 
 echo.
 echo ================================================
-echo rjdsh26 License Agreement
+echo RunicShell26 License Agreement
 echo ================================================
 echo.
 more "%PROJECT_ROOT%\LICENSE.txt"

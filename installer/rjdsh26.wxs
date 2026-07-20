@@ -1,15 +1,15 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
-  <Package Name="rjdsh26" Language="1033" Version="2.0.1" Manufacturer="Roberto J Dohnert" UpgradeCode="{9D91F06D-9D14-40DD-8B25-6275B71825CB}" Scope="perMachine"><MajorUpgrade DowngradeErrorMessage="A newer version of rjdsh26 is already installed." />
+  <Package Name="RunicShell26" Language="1033" Version="2.0.1" Manufacturer="Roberto J Dohnert" UpgradeCode="{9D91F06D-9D14-40DD-8B25-6275B71825CB}" Scope="perMachine"><MajorUpgrade DowngradeErrorMessage="A newer version of RunicShell26 is already installed." />
     <MediaTemplate EmbedCab="yes" />
 
-    <Launch Condition="VersionNT64" Message="rjdsh26 can only be installed on 64-bit Windows systems." />
-    <Launch Condition="Privileged" Message="Administrator privileges are required to install rjdsh26." />
+    <Launch Condition="VersionNT64" Message="RunicShell26 can only be installed on 64-bit Windows systems." />
+    <Launch Condition="Privileged" Message="Administrator privileges are required to install RunicShell26." />
 
     <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
     <ui:WixUI Id="WixUI_Minimal" />
     <UIRef Id="WixUI_ErrorProgressText" />
 
-    <Feature Id="MainFeature" Title="rjdsh26" Level="1">
+    <Feature Id="MainFeature" Title="RunicShell26" Level="1">
       <ComponentRef Id="cmpRshExe" />
       <ComponentRef Id="cmpLicenseTxt" />
     </Feature>

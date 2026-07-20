@@ -14,7 +14,7 @@ if errorlevel 1 exit /b 1
 
 echo.
 echo ================================================
-echo rjdsh26 Uninstall
+echo RunicShell26 Uninstall
 echo ================================================
 echo This will remove:
 echo   %RSH_FILE%

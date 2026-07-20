@@ -12,9 +12,9 @@ if not exist "..\rsh.exe" (
 where wix.exe >nul 2>&1
 if %errorlevel%==0 (
     echo Building MSI with wix.exe...
-    wix build -arch x64 -ext WixToolset.UI.wixext -o rjdsh26-x64.msi rjdsh26.wxs
+    wix build -arch x64 -ext WixToolset.UI.wixext -o RunicShell26-x64.msi rjdsh26.wxs
     if errorlevel 1 exit /b 1
-    echo MSI created: %SCRIPT_DIR%rjdsh26-x64.msi
+    echo MSI created: %SCRIPT_DIR%RunicShell26-x64.msi
     exit /b 0
 )
 
@@ -36,8 +36,8 @@ candle.exe -nologo -arch x64 -ext WixUIExtension rjdsh26.wxs
 if errorlevel 1 exit /b 1
 
 echo Linking MSI with light.exe...
-light.exe -nologo -ext WixUIExtension -cultures:en-us -o rjdsh26-x64.msi rjdsh26.wixobj
+light.exe -nologo -ext WixUIExtension -cultures:en-us -o RunicShell26-x64.msi rjdsh26.wixobj
 if errorlevel 1 exit /b 1
 
-echo MSI created: %SCRIPT_DIR%rjdsh26-x64.msi
+echo MSI created: %SCRIPT_DIR%RunicShell26-x64.msi
 exit /b 0
