@@ -60,8 +60,6 @@ I reworked the code and improved/added additional functionality including:
 7. Improved script execution with positional parameters and script decoding.
 8. Script compatibility with bash, ksh, and PowerShell scripts.
 
-Yes, it is named after me, with my initials as the first three letters.
-
 ## What RunicShell26 Can Do
 
 - Run interactively with command input, editing, and history.
