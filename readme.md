@@ -1,4 +1,6 @@
-<img width="1108" height="621" alt="Capture" src="https://github.com/user-attachments/assets/1da93dee-abfd-4e14-98ca-dd9e3c7991bf" />
+
+<img width="442" height="443" alt="rune" src="https://github.com/user-attachments/assets/3c2d1e50-127f-4f7d-bed5-c69f85cc36fb" />
+<img width="1108" height="621" alt="shell" src="https://github.com/user-attachments/assets/f25a5834-6329-470d-a1c6-d3ed19d608bc" />
 
 
 # RunicShell26
