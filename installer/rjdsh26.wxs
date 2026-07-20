@@ -1,0 +1,26 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+  <Package Name="rjdsh26" Language="1033" Version="2.0.1" Manufacturer="Roberto J Dohnert" UpgradeCode="{9D91F06D-9D14-40DD-8B25-6275B71825CB}" Scope="perMachine"><MajorUpgrade DowngradeErrorMessage="A newer version of rjdsh26 is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Launch Condition="VersionNT64" Message="rjdsh26 can only be installed on 64-bit Windows systems." />
+    <Launch Condition="Privileged" Message="Administrator privileges are required to install rjdsh26." />
+
+    <WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+    <ui:WixUI Id="WixUI_Minimal" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+
+    <Feature Id="MainFeature" Title="rjdsh26" Level="1">
+      <ComponentRef Id="cmpRshExe" />
+      <ComponentRef Id="cmpLicenseTxt" />
+    </Feature>
+
+    <StandardDirectory Id="System64Folder">
+      <Component Id="cmpRshExe" Guid="{118FE6FF-F8E7-4E16-B37D-D01C3702163F}" Bitness="always64">
+        <File Id="filRshExe" Source="..\rsh.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="cmpLicenseTxt" Guid="{6B75026C-5A54-47B8-8F88-3D56721D89A8}" Bitness="always64">
+        <File Id="filLicenseTxt" Source="..\LICENSE.txt" Name="License.txt" KeyPath="yes" />
+      </Component>
+    </StandardDirectory>
+    </Package>
+</Wix>
